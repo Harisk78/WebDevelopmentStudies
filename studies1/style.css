@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto:ital,wght@1,400;1,700&display=swap');
+
+*{
+    padding:0;
+    margin:0
+}
+.first{
+    height:75vh;
+    width:100vw;
+    background-color: rgb(24, 24, 24);
+    background: url('nbg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.top {
+    width:100%;
+    height:80px;
+    display: flex;
+    justify-content: space-around;
+}
+.top h1{
+    line-height: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color:red;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.top .top-right{
+    line-height: 80px;
+}
+.top .top-right select{
+    margin:20px;
+    padding:5px 30px;
+    background: transparent;
+    border:0.5px solid #e5e5e588;
+    color:white;
+}
+.top .top-right .globe{
+    position:relative;
+    color:white;
+    font-size: 20px;
+    top:5px;
+    right:-50px;
+}
+.top .top-right button{
+    padding:8px 20px;
+    background-color: red;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    color:white;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.middle{
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+}
+.middle h1{
+    font-family: 'Inter', sans-serif;
+    margin-bottom:100px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.middle h3{
+    margin:-80px 0 10px 0;
+    font-family: 'Inter', sans-serif;
+}
+.middle h4{
+    margin:20px 0px;
+    font-family: 'Inter', sans-serif;
+}
+.middle .mail input{
+    width:300px;
+    padding:15px 0px;
+    padding-left:10px;
+    margin:0px 5px;
+    background:transparent;
+    border:1px solid #f5f5ff8f;
+    outline:none;
+    border-radius:3px;
+    color:white;
+    font-weight:400;
+    font-size: 15px;
+}
+.middle .mail input::placeholder{
+    color:white;
+}
+.middle .mail button{
+    padding:15px 30px;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+}
