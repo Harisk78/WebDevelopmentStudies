@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Hari
-- 👀 I’m interested in Fronend Development
+- 👀 I’m interested in FullStack Development
 - 🌱 I’m currently learning JS
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
