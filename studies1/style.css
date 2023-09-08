@@ -325,6 +325,9 @@ footer .details .globe{
     .top-right{
         margin-right:40px;
     }
+    footer{
+        height:100vh
+    }
 }
 @media(max-width:490px){
     /* *{
@@ -361,5 +364,14 @@ footer .details .globe{
     }
     .five .fileft img{
         width:300px
+    }
+    footer{
+        height:100%;
+    }
+    footer .details h4{
+        margin-top:-50px;
+    }
+    footer .details .list ul{
+        display:block;
     }
 }
