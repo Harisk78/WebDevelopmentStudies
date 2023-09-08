@@ -2,7 +2,7 @@
 
 *{
     padding:0;
-    margin:0
+    margin:0;
 }
 .container{
     background-color: rgba(0, 0, 0, 0.534);
@@ -73,6 +73,9 @@
     margin-bottom:100px;
     font-size: 50px;
     font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    padding:1rem;
 }
 .middle h3{
     margin:-80px 0 10px 0;
@@ -94,11 +97,14 @@
     font-weight:400;
     font-size: 15px;
 }
+.middle .mail input:focus{
+    background-color: rgba(128, 128, 128, 0.555);
+}
 .middle .mail input::placeholder{
     color:white;
 }
 .middle .mail button{
-    padding:10px 10px;
+    padding:13px 10px;
     border:none;
     outline:none;
     border-radius: 5px;
@@ -107,6 +113,7 @@
     font-size: 20px;
     font-weight: 600;
     cursor:pointer;
+    margin: 3px;
 }
 .second,.third,.fourth,.five{
     height: 80vh;
@@ -115,6 +122,7 @@
     margin-top: 5px;
     display:flex;
     justify-content: space-around;
+    /* padding:1rem; */
 }
 .sleft{
     color:white;
@@ -135,9 +143,9 @@
     display: flex;
     justify-content:center;
     align-items: center;
-}
+}   
 .tleft,.fileft{
-    margin-top:50px;
+    margin-top:250px;
     margin-left:100px;
 }
 .tright,.fleft,.firight{
@@ -149,7 +157,7 @@
     font-family: 'Inter', sans-serif;  
 }
 .fright{
-    margin-top:80px;
+    margin-top:250px;
     margin-right:100px;
 }
 .faq{
@@ -157,7 +165,7 @@
     background-color: black;
     margin-top: 5px;
     color:white;
-    height:100vh;
+    height:100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -170,20 +178,142 @@
 }
 .faq .ques{
     margin-top:30px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .ques .que{
     height:20px;
-    width:60rem;
-    padding:20px 10px;
+    width:50%;
+    padding:30px 20px;
     background-color: rgba(49, 49, 49, 0.945);
     margin:10px;
     text-align: start;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
     position:relative;
+    /* padding: 10px; */
+    cursor:pointer;
+    transition: background-color 0.5s;
+}
+.ques .que:hover{
+    transition: 0.5s;
+    background-color:rgba(143, 143, 143, 0.514) ;
 }
 .plus{
     position:absolute;
     right:10px;
     font-size:30px;
+}
+.faq h4{
+    font-family: 'Inter', sans-serif;
+    margin-top: 50px;
+    font-weight: 100;
+    font-size:20px;
+}
+.btns{
+    margin:50px 0px;
+}
+.faq .btns button{
+    padding:10px 10px;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    background-color:red;
+    color:white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor:pointer;
+}
+.faq .btns input{
+    width:300px;
+    padding:15px 0px;
+    padding-left:10px;
+    background:rgba(68, 68, 68, 0.438);
+    border:1px solid #f5f5ff8f;
+    outline:none;
+    border-radius:3px;
+    color:white;
+    font-weight:400;
+    font-size: 15px;
+}
+.faq .btns input:focus{
+    background-color: rgba(128, 128, 128, 0.555);
+}
+footer{
+    margin-top:5px;
+    height: 50vh;
+    background-color: black;
+    color:rgba(230, 230, 230, 0.801);
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    place-items: center;
+}
+footer .details{
+    height:80%;
+    width:50%;
+}
+footer .details h4{
+    padding:20px 10px;
+    font-weight: 100;
+}
+footer .details .list ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+footer .details .list ul li{
+    list-style-type: none;
+    text-decoration: underline;
+    margin:10px;
+    font-size:13px;
+}
+footer .details select{
+    margin:20px 0px;
+    padding:5px 30px;
+    background: transparent;
+    border:0.5px solid #e5e5e588;
+    color:white;
+}
+footer .details .globe{
+    position:relative;
+    color:white;
+    font-size: 20px;
+    top:5px;
+    right:-30px;
+}
+
+@media(max-width:1440px){
+    .tleft,.fileft{
+        margin-top: 100px;
+    }
+}
+@media(max-width:1024px){
+    .middle h1{
+        font-size:35px;
+    }
+}
+@media(max-width:768px){
+    .middle h1{
+        font-size:30px;
+    }
+    .second,.fourth{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .third,.five{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .third .tright,.five .firight{
+        margin-top: 50px;
+    }
+    .third .tleft,.five .fileft{
+        margin-top: -10px;
+    }
+    .fourth .fright{
+        margin-top:-90px;
+    }
 }
