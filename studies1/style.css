@@ -330,9 +330,9 @@ footer .details .globe{
     }
 }
 @media(max-width:490px){
-    /* *{
-        font-size:15px;
-    } */
+    html,body{
+        overflow-x: hidden;
+    }
     .top-right{
         margin-right: 0px;
     }
