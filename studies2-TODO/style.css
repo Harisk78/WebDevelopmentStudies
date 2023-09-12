@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@1&family=Poiret+One&family=Recursive&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(0,9,36);
+    background: linear-gradient(90deg, rgba(0,9,36,1) 0%, rgba(9,85,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.container{
+    height:100vh;
+    width:100vw;
+    background: rgb(0,9,36);
+    background: linear-gradient(90deg, rgba(0,9,36,1) 0%, rgba(9,85,121,1) 35%, rgba(0,212,255,1) 100%);
+    padding:1rem;
+    display: grid;
+    place-items:center;
+}
+.todo{
+    background-color: aliceblue;
+    border-radius:4px;
+    border:5px solid rgba(12, 12, 12, 0.37);
+    max-height:100%;
+    width:40%; 
+    box-shadow: inset 2px 2px 15px black,
+                        3px 3px 5px black;
+    position:relative;
+}
+.todo h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    width:100%;
+    text-align: center;
+    padding: 50PX;
+    text-shadow: 2px 2px 5px rgb(92, 92, 92);
+}
+.todo .input{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.todo input{
+    margin:0px 15px;
+    margin-bottom: 50px;
+    padding-left:10px;
+    width:70%;
+    height:40px;
+    /* border-top-left-radius:30px;
+    border-bottom-left-radius:30px; */
+    border:0.5px solid #ececec93;
+    outline:none;
+    background: transparent;
+    font-size: 14px;
+   font-weight:500;
+}
+.todo input:hover{
+    border:0.5px solid rgb(179, 179, 179);
+    box-shadow: -1px -1px 5px rgba(126, 126, 126, 0.479);
+}
+.todo input:focus{
+    background-color: rgba(172, 171, 171, 0.377);
+    border:0.2px solid rgb(179, 179, 179);
+    box-shadow: -1px -1px 5px rgba(126, 126, 126, 0.479);
+}
+.todo button{
+    height: 40px;
+    width:70px;
+    position: relative;
+    right: 20px;
+    background-color: rgb(255, 190, 70);
+    border:none;
+    outline:none;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.todo button:active{
+    scale:0.98;
+    box-shadow: 1px 1px 5px rgba(126, 126, 126, 0.479);
+}
+.todo button:hover{
+    background-color: rgb(255, 166, 0);
+    border: 0.2px solid black;
+}
+.todo ul{
+    width:80%;
+}
+.todo ul li{
+    margin-left:100px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position:relative;
+    padding:10px;
+    user-select: none;
+}
+.todo ul li:hover{
+    text-shadow: 1px 1px 4px rgb(187, 186, 186);
+}
+.strike{
+    text-decoration: line-through;
+}
+span{
+    position:absolute;
+    right:10px;
+    font-size: 40px;
+    margin-top:-15px;
+}
+
+@media(max-width:806px){
+    .todo{
+        width:50%;
+    }
+    .todo h1{
+        font-size: 20px;
+    }
+    .todo input{
+        margin-bottom:0;
+    }
+    .todo ul{
+        margin:20px;
+    }
+    .todo ul li{
+       margin:10px;
+    }
+}
+@media(max-width:430px){
+    .todo{
+        width:90%;
+    }
+    .todo input{
+        margin-bottom:0;
+    }
+}
