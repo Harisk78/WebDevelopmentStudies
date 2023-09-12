@@ -1,6 +1,7 @@
 let list=document.getElementById("list");
 let btn=document.getElementById("btn");
 let inp=document.getElementById("inp");
+let dustbin=document.getElementById("dustbin");
 
 btn.addEventListener("click",()=>{
     if(inp.value=='' || inp.value==null){
@@ -24,3 +25,9 @@ list.addEventListener("click",function(e){
         e.target.parentElement.remove();
     }
 },false);
+
+dustbin.addEventListener("click",()=>{
+    while(list.lastChild){
+        list.lastChild.remove();
+    }
+})

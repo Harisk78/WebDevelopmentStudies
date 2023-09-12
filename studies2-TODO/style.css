@@ -77,11 +77,11 @@ body{
     cursor: pointer;
     font-weight: 600;
 }
-.todo button:active{
+.todo #btn:active{
     scale:0.98;
     box-shadow: 1px 1px 5px rgba(126, 126, 126, 0.479);
 }
-.todo button:hover{
+.todo #btn:hover{
     background-color: rgb(255, 166, 0);
     border: 0.2px solid black;
 }
@@ -112,6 +112,10 @@ span{
     right:10px;
     font-size: 40px;
     margin-top:-15px;
+}
+
+#dustbin{
+    background-color: whitesmoke;
 }
 
 @media(max-width:806px){
