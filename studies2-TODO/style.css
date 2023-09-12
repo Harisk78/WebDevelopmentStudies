@@ -26,6 +26,7 @@ body{
     width:40%; 
     box-shadow: inset 2px 2px 15px black,
                         3px 3px 5px black;
+    position:relative;
 }
 .todo h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
