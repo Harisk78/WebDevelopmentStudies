@@ -113,3 +113,29 @@ span{
     font-size: 40px;
     margin-top:-15px;
 }
+
+@media(max-width:806px){
+    .todo{
+        width:50%;
+    }
+    .todo h1{
+        font-size: 20px;
+    }
+    .todo input{
+        margin-bottom:0;
+    }
+    .todo ul{
+        margin:20px;
+    }
+    .todo ul li{
+       margin:10px;
+    }
+}
+@media(max-width:430px){
+    .todo{
+        width:90%;
+    }
+    .todo input{
+        margin-bottom:0;
+    }
+}
