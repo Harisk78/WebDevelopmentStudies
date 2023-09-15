@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:ital,wght@1,200&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background: rgb(233,187,187);
+    background: linear-gradient(90deg, rgba(233,187,187,1) 0%, rgba(0,24,108,1) 0%, rgba(34,208,249,1) 100%);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.weather{
+    background: rgb(233,187,187);
+    background: linear-gradient(90deg, rgba(233,187,187,1) 0%, rgba(120,150,254,1) 0%, rgba(214,94,94,1) 100%);
+    padding:20px;
+    border-radius: 10px;
+}
+h1,h2{
+    text-align: center;
+}
+.input input{
+    padding:10px;
+    width:250px;
+    border-radius:50px;
+    border:none;
+    outline:none;
+    margin:10px;
+    background-color: rgba(54, 54, 54, 0.322);
+    color:white;
+    font-weight: 600;
+}
+.input input::placeholder{
+    color:white;
+}
+.input button{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    color:black;
+    font-size: 20px;
+}
+.input button:hover{
+    border:1px solid black;
+    background-color: rgb(33, 48, 34);
+    color:white;
+}
+.input button:active{
+    scale:0.98;
+}
+.content{
+    width:100%;
+    padding:20px;
+    display: none;
+}
+.content .wimg{
+    height:150px;
+    display: flex;
+    justify-content: center;
+    padding:0;
+}
+.content h1{
+    font-size:50px;
+    text-shadow:2px 2px 5px white;
+    font-family: 'Mooli', sans-serif;
+}
+.bottom{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px;
+}
+.bottom .bleft img,.bright img{
+    width:30px;
+}
+.error{
+    color:white;
+    margin-left:20px;
+    display: none;
+}

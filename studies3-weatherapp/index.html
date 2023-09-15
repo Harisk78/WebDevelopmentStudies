@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harisk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather">
+        <h1>Weather</h1>
+        <div class="input">
+            <input type="text" placeholder="Enter City" id="inp">
+            <button><ion-icon name="search-outline"></ion-icon></button>
+        </div>
+        <div class="error">
+            <p>Enter Correct City Name</p>
+        </div>
+        <div class="content">
+            <div class="wimg">
+                <img src="images/clear.png">
+            </div>
+            <div class="temp">
+                <h1 id="tem">100°c</h1>
+                <h2 id="city">Bangalore</h2>
+            </div>
+            
+            <div class="bottom">
+                <div class="bleft">
+                    <img src="images/humidity.png">
+                    <h3>Humidity</h3>
+                    <span id="hum">50%</span>
+                </div>
+                <div class="bright">
+                    <img src="images/wind.png">
+                    <h3 >Wind</h3>
+                    <span id="wind">50kmph</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
