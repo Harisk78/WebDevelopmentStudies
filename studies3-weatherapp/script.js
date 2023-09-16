@@ -16,8 +16,8 @@ async function weather(city){
         console.log(data);
             document.getElementById("tem").innerHTML=Math.round(data.main.temp)+"°c";
             document.getElementById("city").innerHTML=data.name;
-            document.getElementById("hum").innerHTML=data.main.humidity;
-            document.getElementById("wind").innerHTML=data.wind.speed;
+            document.getElementById("hum").innerHTML=data.main.humidity+"%";
+            document.getElementById("wind").innerHTML=data.wind.speed+"Kmph";
 
             if(data.weather[0].main=='Clear'){
                 image.src="images/clear.png";
