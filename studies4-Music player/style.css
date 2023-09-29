@@ -1,0 +1,82 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con{
+    background-color: red;
+    padding:10px;
+    border-radius:4px;
+    position: relative;
+    box-shadow: 5px 5px 10px black;
+}
+.con h2,h4{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h4{
+    margin-bottom: 10px;
+}
+.con .icon{
+    position:absolute;
+    top:20px;
+    right:10px;
+    font-size: 20px;
+    cursor:pointer;
+    border-radius: 50%;
+    transition:0.2s;
+}
+.con .icon:hover{
+    transition:0.2s;
+    background-color: rgba(240, 248, 255, 0.301);
+}
+.con .img{
+    height:300px;
+    width:300px;
+    margin:20px 0px;
+    border:2px solid black;
+    border-radius:5px;
+    box-shadow: 2px 2px 5px whitesmoke;
+}
+.img img{
+    object-fit: cover;
+    height: 100%;
+    width:100%;
+}
+.inp{
+    display: flex;
+    justify-content: center;
+}
+.inp input{
+    width:100%;
+    height:2px;
+    margin-bottom:10px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    margin:10px;
+    padding:10px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    border-radius: 40%;
+    background: rgba(0, 0, 0, 0.473);
+    cursor: pointer;
+    box-shadow: 3px 3px 0px black;
+    color:white;
+}
+.btn button:active{
+    box-shadow: none;
+    transform: translateY(3px) translateX(3px);
+}
