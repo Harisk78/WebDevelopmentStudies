@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:ital,wght@1,200&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.con1{
+    height:100vh;
+    width:100vw;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+}
+.con1 .form{
+    background-color: antiquewhite;
+    padding:10px;
+    border-radius:5px;
+    box-shadow: 5px 5px 10px black;
+    position: absolute;
+}
+.con1 h2{
+    text-align: center;
+    margin:10px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    user-select: none;
+}
+.con1 .details{
+    display: flex;
+    flex-direction: column;
+}
+.con1 .details input{
+    margin:20px;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px black;
+}
+.con1 .details input:focus{
+    border:1px solid blue
+}
+#img{
+    box-shadow: none;
+    background-color: rgba(240, 248, 255, 0.671);
+    cursor:pointer;
+}
+.con1 .submit{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin:10px 0px;
+    position: relative;
+}
+.con1 .submit button,.idcard .reset button{
+    padding:10px 50px;
+    border:1px solid black;
+    outline:none;
+    background-color: yellowgreen;
+    cursor:pointer;
+    color:white;
+    text-shadow: 2px 2px 5px black;
+    border-radius: 50px;
+    box-shadow: 2px 2px 0px black;
+}
+.con1 .submit button:active,.idcard .reset button:active{
+    transform:scale(0.98);
+    box-shadow:none;
+    transform: translateX(2px) translateY(2px);
+}
+.con1 .submit button:hover,.idcard .reset button:hover{
+    background-color:rgb(86, 124, 9);
+}
+.con1 .con1icon{
+    position: absolute;
+    top:8px;
+    right:100px;
+    color:white;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+.idcard{
+    background-color:aliceblue;
+    padding:10px;
+    border-radius:5px;
+    box-shadow: 5px 5px 10px black;
+    transform: translateY(-150%);
+    opacity:0;
+}
+.idcard .img{
+    width: 100%;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+}
+.idcard .img img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+.idcard .dd{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.idcard .details h3{
+    width:100%;
+    position:relative;
+    padding-top:30px;
+    width:100%;
+    padding-right:10px;
+}
+.idcard .details{
+    padding:20px;
+}
+.idcard .details h3 span{
+    position:absolute;
+    right:0;
+}
+.idcard .data{
+    padding:20px;
+}
+.idcard .data h3{
+    padding-top: 30px;
+}
+.idcard .reset{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+    position:relative;
+}
+.idcard .reset .con2icon{
+    position:absolute;
+    top:10px;
+    right:100px;
+}
+
+.conactive{
+    transform: translateY(200%);
+    transition:all 2s linear;
+    opacity:0;
+}
+.idactive{
+    transform: translateY(0%);
+    transition:all 2s linear;
+    opacity:1;
+}
