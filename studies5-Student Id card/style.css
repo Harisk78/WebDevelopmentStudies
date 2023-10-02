@@ -140,14 +140,3 @@
     top:10px;
     right:100px;
 }
-
-.conactive{
-    transform: translateY(200%);
-    transition:all 2s linear;
-    opacity:0;
-}
-.idactive{
-    transform: translateY(0%);
-    transition:all 2s linear;
-    opacity:1;
-}
