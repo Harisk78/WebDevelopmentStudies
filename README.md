@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Hari
 - 👀 I’m interested in FullStack Development
-- 🌱 I’m currently learning JS
+- 🌱 I’m currently learning ReactJS
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
